@@ -1,0 +1,50 @@
+<script src=" https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<div id="desafio">
+
+    <h2>#01</h2>
+    <div>
+        <button @click="iniciarEfeito">Iniciar Efeito</button>
+        <div id="efeito" :class="{'destaque': aplicarDestaque, 'encolher': aplicarEncolher}" ></div>
+    </div>
+
+
+    <h2>#02</h2>
+    <div :class="['girar', 'destaque']">Estou sem classe CSS</div>
+
+
+    <h2>#03</h2>
+    <div>
+        <input type="text" v-model="classes">
+        <div id="usuario" :class="[classes]"></div>
+    </div>
+
+
+    <h2>#04</h2>
+    <div>
+        <input type="text" v-model="classes2">
+        <input type="text" @input="setPerigo">
+        <div id="usuario2" :class="[classes2, {perigo}]"></div>
+    </div>
+
+
+    <h2>#05</h2>
+    <div>
+        <input type="text" v-model="cor5">
+        <div :style="[estilo5, {backgroundColor: cor5}]"></div>
+    </div>
+
+
+    <h2>#06 Barra de progresso</h2>
+    <div>
+        <button @click="iniciarProgresso">Iniciar</button>
+        <div class="barra-progresso">
+            <div class="progresso" :style="{width}"></div>
+        </div>
+    </div>
+
+
+
+<script src="app.js"></script>
+</div>

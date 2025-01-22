@@ -1,0 +1,50 @@
+<script src=" https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio2</title>
+</head>
+<body>
+<header>
+    <h1>Desafio 2 de Vue.js</h1>
+    <hr>
+</header>
+
+<h3>Exibir um alerta quando o botão for clicado!</h3>
+<div id="desafio">
+    <button v-on:click="exibiralerta">Exibir Alerta</button>
+    <p>Exibir alerta quando o enter for clicado</p>
+    <input type="text" v-on:keyup.enter="exibiralerta">
+
+<hr>
+
+<h3>Evento keydown armazenar o "valor" na propriedade data' (event.target.value)</h3>
+<div>
+    <input type="text" v-on:keydown="armazenar">
+    <p> {{ valor }} </p>
+</div>
+<hr>
+
+<h3>Evento Keydown que só mostra o que foi digitado quando a tecla ENTER for acionada</h3>
+<div>
+    <input type="text" v-on:keydown.enter="armazenar2">
+    <p> {{ valor2}} </p>
+</div>
+<hr>
+
+<h3>Evento que só mostra o que foi digitado quando o botão for ativado</h3>
+<div>
+    <input type="text" v-model="valor3">
+    <button v-on:click="mostrararmazenado">Mostrar</button>
+    <p> {{ valor4 }}</p>
+</div>
+
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
