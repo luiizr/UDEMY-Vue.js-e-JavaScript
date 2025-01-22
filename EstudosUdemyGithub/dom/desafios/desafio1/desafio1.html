@@ -1,0 +1,43 @@
+<script src=" https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
+<script src="https://unpkg.com/vue"></script>
+
+<div id="desafio">
+
+    <p>Usando VueJS - Meu nome é {{ nome }}, tenho {{ idade }} anos e estou aprendendo VueJS</p>    <!--  interpolação = {{ }}  -->
+    
+    <p>{{ mult3() }} ou {{ idade * 3 }}</p>
+
+    <p>{{ numRandom() }} ou {{ Math.random() }}</p>
+
+    <div>
+        <img height="400" v-bind:src="imagem" alt="">
+    </div>
+
+    <br>
+
+    <div>
+        <input type="text" v-bind:value="nome" >
+    </div>
+
+</div>
+
+<script>
+    new Vue({
+        el:'#desafio',
+        data:{
+            nome:'Luiz',
+            idade:19,
+            imagem: 'race-selection-screen-world-of-warcraft-classic-races.webp'
+        },
+        methods:{
+            mult3(){
+                return this.idade * 3
+            },
+            numRandom(){
+                return Math.random()
+            }
+        }
+
+    })
+
+</script>

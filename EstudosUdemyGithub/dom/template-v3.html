@@ -1,0 +1,22 @@
+<script src=" https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <p>{{ titulo }}</p>
+    <p 1FRN-bind="abc">{{ saudacao() }}</p>
+    <a v-bind:href="link">Google</a>    <!-- v-bind para resolver o valor -->
+</div>
+
+<script>
+    new Vue({
+        el: '#app',  //elemento que ele vai estar manipulando
+        data: {
+            titulo: 'Usando VueJS!',
+            link: 'http://google.com.br'
+        },
+        methods: {
+            saudacao: function() { 
+                return 'Boa semana!'
+            }
+        }
+    })
+</script>

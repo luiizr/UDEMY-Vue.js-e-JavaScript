@@ -1,0 +1,23 @@
+<script src=" https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <p>{{ contador }}</p>
+    <p>{{ contador * 2 }}</p>
+    <p>{{ contador - 10 - 80 * 2 }}</p>
+    <p>{{ contador > 10 ? 'Maior do que 10' : 'Menor do que 10' }}</p>  <!-- Expressões de uma linha como booleanos funciona-->
+    <button v-on:click="somar">Somar 1</button>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',  //elemento que ele vai estar manipulando
+        data: {
+            contador: 0,
+        },
+        methods: {
+            somar(passo, event) {
+                this.contador++
+            },
+        }
+    })
+</script>
