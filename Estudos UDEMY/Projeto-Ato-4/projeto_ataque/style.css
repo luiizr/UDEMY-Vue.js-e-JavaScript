@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+
+#bloco1 {
+    display: flex;
+    justify-content: space-around;
+    height: 14%;
+    margin: 12px;
+    background-color: white; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+    border-radius: 4px;    /* Arredondar pontas */
+
+}
+
+#lifeJogador, #lifeMonstro {
+    border: 1px solid black;
+    width: 300px;
+    height: 12px;
+}
+
+.progresso {
+    flex: 1;
+    background-color: green;
+    height: 100%;
+    /* width: 100%; */
+}
+
+.perigo {
+    background-color: red;
+}
+
+
+#monstro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#jogador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#resultado {
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    height: 9%;
+    align-items: center;
+    background-color: white; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+    border-radius: 4px;    /* Arredondar pontas */
+}
+
+
+#bloco2 {
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    height: 9%;
+    align-items: center;
+    background-color: white; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+    border-radius: 4px;    /* Arredondar pontas */
+}
+
+#infos {
+    display: flex;
+    height: 47%;
+    align-items: center;
+    justify-content: center;
+    background-color: blue; 
+    border-radius: 2px;    /* Arredondar pontas */
+    border: none;
+    color: aliceblue;
+}
+
+
+
+#bloco3 {
+    margin: 12px;
+    display: flex;
+    justify-content: space-around;
+    height: 9%;
+    align-items: center;
+    background-color: white; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+    border-radius: 4px;    /* Arredondar pontas */
+}
+
+/* 
+#botoes {
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+} */
+
+#botoes button {
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
